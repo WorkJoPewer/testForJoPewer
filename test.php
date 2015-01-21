@@ -1,8 +1,8 @@
 <?php
-function revStr($str="vse scoree da pobistree")
+function revStr($str="hello")
 {
-$strrev = strrev($str);
-return $strrev;
+for ($i = strlen($str) - 1, $out = ''; $i >= 0; $out .= $str[$i--]) {}
+return $out;
 }
 echo revStr();
 ?>
