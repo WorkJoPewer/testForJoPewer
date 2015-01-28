@@ -5,7 +5,7 @@ function arrToStr(
     $str='';
     $count = count($arr);
         for($i=0; $i<$count; $i++){
-            $str .= $arr[$i];
+        $str .= $arr[$i];
         }
     return $str;
 }
