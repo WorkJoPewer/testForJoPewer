@@ -1,5 +1,5 @@
 <?php
-class StringToArray{{
+class StringToArray{
     public $string;
 	
 	public function __construct(){
