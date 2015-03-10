@@ -1,16 +1,18 @@
 <?php
-class StringToArray{
-    public $string;
+<?php
+class ArrayToString{
+	public $array;
 	
-	public function __construct(){
-	    $this->string = "sunny";
+	public function __construct($array){
+		$this->array=$array;
 		
 	}
-	public function strToArray(){
-	    print_r (str_split($this->string));
+	public function arrayToString(){
+		print implode('', ($this->array));
 	}
-    
 }
-$obj = new StringToArray;
-$obj->strToArray();
+$obj = new ArrayToString(array('banana', 'lemon','apple'));
+$rezult= $obj-> arrayToString();
+echo $rezult;
+?> 
 ?> 

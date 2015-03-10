@@ -3,8 +3,8 @@ class CharactersCount
 {
 	public $string;
 	
-	public function __construct(){
-		$this->string ='tak 4asto bivaet lubov umiraet';
+	public function __construct($string){
+		$this->string =$string;
 	}
 	public function getCharactersCount(){
 		$result = count_chars(($this->string), 0);
@@ -14,7 +14,6 @@ class CharactersCount
             }
 	}
 }
-$char = new CharactersCount;
-$char -> getCharactersCount();
-//var_dump((bool)$char); 
+$char = new CharactersCount('tak 4asto bivaet lubov umiraet');
+echo $char -> getCharactersCount();
 ?>  
